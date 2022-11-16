@@ -1,0 +1,14 @@
+* {
+    color: gray;
+}
+
+#app {
+    background-image: url('@/assets/hdj-bg.jpg');
+    background-size: cover;
+}
+
+#router {
+    background: linear-gradient(315deg, #ffffffe7, #dddddde7, #cccccce7);
+    box-shadow: -20px -20px 60px #a8a8a8,
+        20px 20px 60px #f7f7f7;
+}
