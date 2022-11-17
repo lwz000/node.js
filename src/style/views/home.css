@@ -5,3 +5,12 @@
     font-size: 48px;
     color: #fff;
 }
+
+#cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}

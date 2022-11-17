@@ -11,14 +11,14 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import( '../views/about.vue')
-  },
-  {
     path: '/relax',
     name: 'relax',
     component: () => import( '../views/relax.vue')
+  },
+  {
+    path: '/birthday',
+    name: 'birthday',
+    component: () => import( '../views/birthday.vue')
   }
 ]
 

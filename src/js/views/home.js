@@ -1,14 +1,14 @@
 import { defineComponent , ref ,reactive } from "vue";
-// 引入
-import HelloWorld from "@/components/HelloWorld.vue";
+import happy_box from "@/components/happy_box.vue"
 
 export default defineComponent({
-    name: "HomeView",
-    // 组件
-    components: {
-        HelloWorld,
+    name: "home",
+    components:{
+        happy_box
     },
     setup(props) {
+        let cover = ref(false); //遮罩层（黑幕）
+
         // 打字机效果
         let poem = ref('网络不通畅哦~');
         (function(){
@@ -55,7 +55,11 @@ export default defineComponent({
                 }, 100);
             })
         })()
+        
+        let show_cover = ()=>{
+            cover.value = !cover.value
+        }
 
-        return { poem }
+        return { poem ,cover,show_cover }
     }
 });

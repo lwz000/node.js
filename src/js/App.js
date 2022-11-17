@@ -1,4 +1,13 @@
-export default {
+import { defineComponent , ref ,reactive } from "vue";
+
+// 引入
+import weather from "@/components/weather.vue";
+
+export default defineComponent({
+  // 组件
+  components: {
+    weather,
+  },
   props: {
     title: String
   },
@@ -26,5 +35,4 @@ export default {
         return
     }
   }
-}
-  
+})

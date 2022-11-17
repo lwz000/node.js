@@ -1,10 +1,10 @@
-* {
-    color: gray;
-}
-
 #app {
     background-image: url('@/assets/hdj-bg.jpg');
     background-size: cover;
+}
+
+a {
+    color: rgb(78, 78, 78);
 }
 
 #router {
